@@ -1,0 +1,13 @@
+name: SMART-WEB-SERVICE<br><small>SMART-WEB平台</small>
+pages:
+  - name: 主页
+    url: /main
+
+  - name: 登录
+    url: /login
+
+  - name: 修改个人信息
+    url: /user
+
+  - name: 用户管理
+    url: /user-admin

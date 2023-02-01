@@ -1,0 +1,191 @@
+.bX, .gX {
+  width: 124px
+}
+
+.panel {
+
+  vertical-align: top;
+}
+
+
+.block {
+  display: block
+}
+
+#plot_1, #show {
+  padding: 2px;
+}
+
+.myfig {
+  position: relative;
+  margin: 2px;
+  border: 1px solid lightgray;
+}
+
+.myfig > img {
+  max-width: 800px;
+}
+
+.myfig.active > img {
+  max-width: 100%;
+}
+
+.myfig > .eplot.active {
+  background: lightcyan;
+  border-color: cornflowerblue;
+}
+
+.myfig.active {
+  position: fixed;
+  top: 38px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #888899aa;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  z-index: 999;
+  margin: -2px;
+}
+
+.myfig.active:before {
+  /*content: '图片预览';*/
+  font-size: 32px;
+  color: red;
+  left: 63px;
+  top: 5px;
+  position: absolute
+}
+
+.myfig > .info {
+  overflow-y: auto;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  /*height: 24px;*/
+}
+
+.myfig > .info > .btn {
+  padding: 5px !important;
+}
+
+.check-show-next:checked + * {
+  display: unset !important;
+}
+
+/*.myfig.active > .info {}*/
+
+/*.myfig > .info:hover {*/
+/*  height: 100%;*/
+/*  background: #CCFFFF88;*/
+/*}*/
+
+
+input {
+  animation: background-color 1s ease;
+}
+
+
+input:valid {
+  color: #A9A9A9;
+  background-color: #F0FFFF;
+  font-weight: bold;
+}
+
+
+input:invalid {
+  border: 1px solid #f88;
+  /*background-color: #FCC;*/
+  /*color: #f00*/
+}
+
+
+input:valid:focus {
+  background-color: #CFA;
+}
+
+input:indeterminate {
+  background-color: #CCC;
+}
+
+td > span {
+  min-width: 120px;
+  display: inline-block;
+}
+
+.configure [class^=col-] {
+  padding: 2px;
+}
+
+
+.y {
+  background-color: lemonchiffon
+}
+
+select[required]::before {
+  margin: -7px -3px;
+}
+
+input[required]::before {
+  margin: -7px -3px;
+}
+
+textarea[required]::before {
+  margin: -7px -3px;
+}
+
+[required]::before {
+  content: "*";
+  position: absolute;
+  color: red;
+  font-size: 16px;
+  font-family: fantasy;
+  font-weight: bolder
+}
+
+
+.x {
+  height: 100%;
+  margin: -5px 0;
+}
+
+.row.small {
+  margin: 0 -3px;
+}
+
+.row.small > div {
+  padding: 3px;
+}
+
+td:hover > div {
+  display: block !important;
+}
+
+input.eh {
+  padding: 0 3px;
+}
+
+#show {
+  padding: 0 5px;
+  height: calc(100% - 30px);
+  overflow-y: auto
+}
+
+.x.right {
+  margin: 10px 10px 10px 815px;;
+  height: calc(100% - 20px);
+}
+
+.x.left {
+  height: calc(100% - 20px);
+  margin: 0;
+  top: 10px;
+  bottom: 10px;
+  position: absolute;
+  left: 10px;
+  width: 800px;
+}
+

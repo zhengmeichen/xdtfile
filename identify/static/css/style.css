@@ -1,0 +1,126 @@
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-button, ::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner, ::-webkit-resizer {
+  width: 8px;
+  height: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 141, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button {
+  background-color: rgba(0, 141, 255, 0.4);
+}
+
+::-webkit-scrollbar-button:hover, ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 141, 255, 0.7);
+}
+
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(0, 141, 255);
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+input, select, pre {
+  border: 1px solid rgba(0, 73, 168, 0.4);
+  outline: none;
+}
+
+select {
+  padding: 2px;
+  width: 100%;
+}
+
+output {
+  padding: 0
+}
+
+.btn {
+  border-width: 0 !important;
+  outline: none !important;
+}
+
+.opt-fa > option {
+  word-break: break-word;
+  white-space: normal;
+  text-indent: -40px;
+  padding-left: 40px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 100ms linear;
+}
+
+.opt-fa > option:hover {
+  transition: background-color 0ms;
+  background-color: #bfd7ff;
+  /*   inset 0 100px 0 #00c7c3 */
+}
+
+.panel-heading {
+  padding: 4px 15px !important;
+}
+
+.opt-fa > option:before {
+  padding-right: 10px;
+  content: "\f096";
+}
+
+.opt-fa > option:checked:before {
+  content: "\f046";
+}
+
+label {
+  font-weight: normal;
+  margin: 0;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.m0 {
+  margin: 0
+}
