@@ -1,0 +1,9 @@
+/STSS/FY3E_STSS/A/bin/python3 GNOStest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 HIRAStest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 MWHStest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 MWTStest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 SEMtest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 TIPMtest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 WRADCtest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 WRADKutest.py 20220108
+/STSS/FY3E_STSS/A/bin/python3 XEUVItest.py 20220108

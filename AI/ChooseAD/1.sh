@@ -1,0 +1,14 @@
+for i in {20210710..20210731};do echo python 1.py $i MP;done | sh 
+for i in {20210810..20210831};do echo python 1.py $i MP;done | sh 
+for i in {20210910..20210930};do echo python 1.py $i MP;done | sh 
+for i in {20211010..20211031};do echo python 1.py $i MP;done | sh 
+for i in {20211110..20211130};do echo python 1.py $i MP;done | sh 
+for i in {20211210..20211231};do echo python 1.py $i MP;done | sh 
+for i in {20220110..20220131};do echo python 1.py $i MP;done | sh 
+for i in {20220210..20220228};do echo python 1.py $i MP;done | sh 
+for i in {20220310..20220331};do echo python 1.py $i MP;done | sh 
+for i in {20220410..20220430};do echo python 1.py $i MP;done | sh 
+for i in {20220510..20220531};do echo python 1.py $i MP;done | sh 
+for i in {20220610..20220630};do echo python 1.py $i MP;done | sh 
+for i in {20220710..20220731};do echo python 1.py $i MP;done | sh 
+for i in {20220810..20220831};do echo python 1.py $i MP;done | sh 
