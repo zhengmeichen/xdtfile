@@ -565,6 +565,7 @@ def qcBusiness(name, uptm):
 
     startfile = ''
     endfile = ''
+
     # 各个仪器检验时间
     # ENDTIME是当前时间的前一天，如今天2022-07-02，ENDTIME就为2022-07-01
     # 2022-07-01
@@ -577,11 +578,35 @@ def qcBusiness(name, uptm):
     #     select_time = et.split('-')
     # else:
     #     select_time = ENDTIME.split('-')
+    # # 20220701
+    # path_time = select_time[0] + select_time[1] + select_time[2]
+    # # todo 2023-02-07 对仪器查找有无当天文件做了更新
+    # file_dir = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s' % (YQ, path_time)
+    # if os.path.exists(file_dir):
+    #     file_num = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s/*.h5' % (YQ, path_time)
+    #     # 读取所有file_num路径.h5文件个数
+    #     filelist = (sorted(glob.glob(file_num)))
+    #     # print filelist
+    #     # startfile存有文件开始时间，endfile存有文件结束时间
+    #     startfile = filelist[0]
+    #     endfile = filelist[-1]
+    # else:
+    #     # 当天的不存在找前一天的
+    #     path_time = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+    #     path_time = path_time.replace('-', '')
+    #     file_num = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s/*.h5' % (YQ, path_time)
+    #     filelist = (sorted(glob.glob(file_num)))
+    #     # print filelist
+    #     # startfile存有文件开始时间，endfile存有文件结束时间
+    #     startfile = filelist[0]
+    #     endfile = filelist[-1]
+
     select_time = ENDTIME.split('-')
     # 20220701
     path_time = select_time[0] + select_time[1] + select_time[2]
     # todo 2023-02-07 对仪器查找有无当天文件做了更新
     file_dir = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s' % (YQ, path_time)
+    # 存在当天的文件
     if os.path.exists(file_dir):
         file_num = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s/*.h5' % (YQ, path_time)
         # 读取所有file_num路径.h5文件个数
@@ -596,6 +621,7 @@ def qcBusiness(name, uptm):
         select_time = et.split('-')
         path_time = select_time[0] + select_time[1] + select_time[2]
         file_dir = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s' % (YQ, path_time)
+        # 存在昨天的文件
         if os.path.exists(file_dir):
             file_num = '/STSS/FY3E_STSS/system/stweb/data/gcyc/FY3E_%s/%s/*.h5' % (YQ, path_time)
             # 读取所有file_num路径.h5文件个数
